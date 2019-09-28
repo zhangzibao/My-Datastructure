@@ -1,0 +1,38 @@
+#define MAXV 20
+#define INF 32767
+#define InfoType int
+// ÁÚ½Ó±í 
+typedef struct ANode {
+	int adjvex;
+	int weight;
+	struct ANode *nextarc;
+}ArcNode;
+typedef struct VNode{
+	InfoType info;
+	ArcNode *fristarc;
+}VNode;
+typedef struct AdjGraph{
+	VNode adjlist[MAXV];
+	int n,e;
+}AdjGraph;
+
+// ÁÚ½Ó¾ØÕó
+typedef struct{
+	int id;
+	InfoType info;
+}VertexType;
+typedef struct{
+	int edges[MAXV][MAXV];
+	int n,e;
+	VertexType vexs[MAXV];
+}MatGraph;
+
+void CreateGraph(int A[][5]);
+
+void printArray(int A[][5], int rows, int cols);
+
+void SaveGraph(int A[][5]);
+
+void BFS(int A[][5], int v);
+
+void DFS(int A[][5], int v);
