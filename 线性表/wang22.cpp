@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* ÕÒ³ösorted sequence S1 and S2 ÖÐµÄmidium-number */
+/* find the midium-number in sorted sequence S1 and S2 */
 void wang11(int	*S1,int *S2, int n1, int n2);
 
-/* ÕÒ³öhost-number of one-d array */
+/* find the host-number in one-d array */
 int wang12(int *A, int n);
 
 /* find the unshowed min-int in the array*/
